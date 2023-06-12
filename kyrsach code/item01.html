@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sweete sting</title>
+    <link rel="stylesheet" href="style2.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html" class="logo">
+        <img
+          src="Photo/imgonline-com-ua-Resize-R6pjIEAmb6.jpg"
+          alt="logo"
+        /><!-- добавление логотипа -->
+      </a>
+
+      <nav class="navbar">
+        <!-- nav навигация меню -->
+        <a href="index.html">Главное</a>
+        <a href="index.html">О нас</a>
+        <a href="menu.html">Меню</a>
+        <a href="#products">отзывы</a>
+
+        <a href="#contact">Контакты</a>
+
+        <a href="reg.html">Регистарция</a>
+      </nav>
+
+      <!-- Добавление иконок -->
+      <div class="icons">
+        <div class="number" style="font-size: 10px; margin-right: 8rem">
+          +(373)778-32-902
+        </div>
+        <br />
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="shop-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-sign-in" id="sign-btn"></div>
+      </div>
+
+      <div class="search-form">
+        <input
+          type="search"
+          id="search-box"
+          placeholder="поиск хани стафа..."
+        />
+        <label for="search-box" class="fas fa-search"></label>
+      </div>
+      <div class="korzina-form">
+        <div class="product-from-korzina">
+          <h1>ljybrjdsq</h1>
+          <div class="buttons-pls">
+            <button>+</button>
+          </div>
+
+          <div class="buttons-min">
+            <button>-</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container_item01">
+      <h1 style="color: gold">
+        <span style="color: black">Заказ: </span> Гречишный МЕД
+      </h1>
+    </div>
+
+    <main>
+      <div class="formasend">
+        <p class="formasend01" style="font-size: 70px">Данные</p>
+        <br />
+
+        <form id="order-form" action="order.php" method="post">
+          <label
+            >Имя покупателя:
+            <input id="nameInput" name="Name" placeholder="Имя" type="text" />
+          </label>
+
+          <label
+            >Номер:
+            <input
+              id="numberInput"
+              name="Number"
+              placeholder="Номер"
+              type="tel"
+            />
+          </label>
+
+          <label
+            >Куда отправить:
+            <input
+              id="placeInput"
+              name="Place"
+              placeholder="Место"
+              type="text"
+            />
+          </label>
+
+          <label
+            >Кол-во миллилитров:
+            <select name="Volume" id="volumeSelect">
+              <option value="100">100 мл</option>
+              <option value="250">250 мл</option>
+              <option value="500">500 мл</option>
+            </select>
+          </label>
+
+          <label
+            >Кол-во банок:
+            <input
+              id="counterInput"
+              name="Counter"
+              placeholder="Кол-во"
+              type="number"
+              oninput="calculatePrice()"
+            />
+          </label>
+          <p>Цена:</p>
+          <p style="color: green" id="priceLabel"></p>
+
+          <label
+            >Комментарий:
+            <textarea
+              name="comment"
+              placeholder="Комментарий"
+              id="commentTextarea"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </label>
+          <fieldset>
+            <legend>Type</legend>
+
+            <label>
+              <input
+                id="onReceive"
+                type="radio"
+                name="type"
+                value="1"
+                checked
+                class="close"
+              />
+              При получении
+            </label>
+
+            <br />
+
+            <label>
+              <input type="radio" name="type" id="QRR" value="2" />
+              <span class="qrr-label">QRcode</span>
+            </label>
+          </fieldset>
+
+          <!-- Модальное окно -->
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img
+              class="modal-content"
+              id="modalImage"
+              src="Photo/qr-code.png"
+              alt="Modal Image"
+            />
+          </div>
+
+          <label>
+            <input type="checkbox" name="terms" />
+            Я согласен(-на) с правилами и условиями
+          </label>
+
+          <button href="buyf.html" class="btn_01">Оформить</button>
+        </form>
+      </div>
+      <div class="zeros"><br /></div>
+    </main>
+
+    <script src="SEND_form.js"></script>
+  </body>
+</html>

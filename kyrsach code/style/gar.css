@@ -1,0 +1,19 @@
+.words {
+  color: blue;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.test {
+  background-color: rgb(248, 190, 0);
+  margin: 200px 300px;
+  height: 200px;
+  width: 500px;
+  border-radius: 33px;
+}
+
+.test:hover {
+  cursor: cell;
+  background-color: orange;
+  transform: scale(1.1);
+}

@@ -1,0 +1,33 @@
+.logo img {
+  height: 200px;
+  border-radius: 100px;
+  margin-left: 110px;
+}
+
+body {
+  margin-left: 40%;
+  margin-top: 10%;
+  background-color: #d3ad7f;
+}
+h1 {
+  color: rgb(18, 37, 209);
+}
+
+body .backk {
+  margin-left: 10%;
+}
+
+body .form-control {
+  margin-left: 15%;
+  align-items: 10px;
+  width: 90px;
+}
+
+body .wordss {
+  margin-left: 15%;
+}
+
+body .logooo {
+  margin-bottom: 100px;
+  margin-left: 12%;
+}
